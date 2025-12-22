@@ -1,0 +1,355 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Tyms",
+				"abbreviation": "Tyms",
+				"full": "Tyms",
+				"version": "1.2",
+				"authors": [
+					"Tym"
+				],
+				"convertedBy": [
+					"Harry"
+				],
+				"color": "b83939",
+				"colorNight": "de4e4e"
+			}
+		],
+		"status": "ready",
+		"dateAdded": 1766362680,
+		"dateLastModified": 1766404407
+	},
+	"item": [
+		{
+			"name": "Boar Spear",
+			"source": "Tyms",
+			"page": 0,
+			"type": "M",
+			"rarity": "uncommon",
+			"weight": 5,
+			"weaponCategory": "martial",
+			"property": [
+				"R",
+				"2H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Wings",
+					"entries": [
+						"When a Large or smaller creature enters your reach with this weapon, you can use your reaction to force it to make a contested Strength (Athletics) check against you. If you succeed, the creature takes the weapon's normal damage, is stopped 5 ft. away from you and its speed becomes 0 for the rest of the turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Cloak of the Cozy North",
+			"source": "Tyms",
+			"page": 0,
+			"type": "G",
+			"rarity": "uncommon",
+			"attachedSpells": [
+				"calm emotions"
+			],
+			"wondrous": true,
+			"entries": [
+				"This dark velvet cloak with thick sable fur around the collar with old golden clasps with runic designs attached together with a chain has the following properties:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "It constitutes {@item clothing, cold weather|IDRotF|cold weather gear}"
+						},
+						{
+							"type": "item",
+							"entry": "Once per day you may drape it over a willing creature, or hug a willing creature while wearing it, and cast {@spell calm emotions|PHB} on them"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Box of Refrigeration",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"This small rectangular box is slightly cold to the touch and always appears to have condensation on its exterior.",
+				"It has dimensions of 30x20x10cm.",
+				"Any object or creature fully within the volume for more than 1 minute has its temperature magically set to exactly 5 degrees Celsius.",
+				"Upon partially or fully leaving the volume of the box the objects' or creatures' temperature returns to its original temperature."
+			]
+		},
+		{
+			"name": "Boots of Puddle Immunity",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"attachedSpells": [
+				"puddle walk"
+			],
+			"wondrous": true,
+			"entries": [
+				"While wearing these fine boots your clothing is immune to non-magical dirt originating from the surface you are on.",
+				"Once per day you may cast {@spell puddle walk|Tyms}."
+			]
+		},
+		{
+			"name": "Wand of Canned SoundBites",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"type": "WD",
+			"charges": 5,
+			"recharge": "dawn",
+			"entries": [
+				"This wand holds 5 charges, regaining all charges at dawn. While holding the wand you gain access to the following:",
+				{
+					"type": "entries",
+					"name": "Replay (1 charge)",
+					"entries": [
+						"Choose a point within 60ft. A sound emanates from a 10ft sphere centered at the point. You may choose of one of the precanned audience reaction sounds:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "item",
+									"entry": "Laughter"
+								},
+								{
+									"type": "item",
+									"entry": "Applause"
+								},
+								{
+									"type": "item",
+									"entry": "Booing"
+								},
+								{
+									"type": "item",
+									"entry": "Awww-ing"
+								},
+								{
+									"type": "item",
+									"entry": "Or if you have previously used the Record ability, you may replay that sound."
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Record (2 charges)",
+					"entries": [
+						"As an Action you record a short sound (6 seconds or up to 10 words). The sound is stored in the wand and can be Replayed. If you use this action again the saved sound is lost and replaced by the new one."
+					]
+				}
+			]
+		},
+		{
+			"name": "Casoronan Flask",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "common",
+			"wondrous": true,
+			"weight": 0.5,
+			"entries": [
+				"This small ceramic flask appears to be able to hold a half a pint of liquid and weighs half a pound. Sloshing sounds can be heard from within the flask when it is shaken, even if the flask is empty.",
+				"You can use an action and name one liquid from the table below to cause the flask to produce the chosen liquid. The maximum amount of liquid the jug can produce depends on the liquid you named.",
+				"Once the flask has produced its maximum amount of a certain type of liquid, it cannot produce any more of that liquid until the next dawn.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Liquid",
+						"Max Amount"
+					],
+					"colStyles": [
+						"col-2",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Extra virgin olive oil",
+							"½ pint"
+						],
+						[
+							"Wine",
+							"½ pint"
+						],
+						[
+							"Passata",
+							"½ pint"
+						],
+						[
+							"Perfume",
+							"4 ounces"
+						]
+					]
+				}
+			],
+			"miscTags": [
+				"CF/W"
+			]
+		},
+		{
+			"name": "Scrunchy of Hair Taming",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"charges": 3,
+			"recharge": "dawn",
+			"entries": [
+				"This Scrunchy has the colour and shape perfectly fitting your hair.",
+				"This item has 3 charges, which regenerate at dawn. While worn in the hair you gain access to the following:",
+				{
+					"type": "entries",
+					"name": "Tame Hair (no cost)",
+					"entries": [
+						"As an action you can command the Scunchy yo change your hairstyle (it however does not adjust colour or length)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Dye (1 charge)",
+					"entries": [
+						"As an action command the Scrunchy to change the colour of your hair. The effect lasts for 8 hours or until dismissed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hair of Billowing (2 charges)",
+					"entries": [
+						"As an action command the Scrunchy to let your hair flow wild. For 1 minute or until dismissed your hair appears to be hit by the wind in a perfectly flattering way. While this is active you have +2 to Charisma saving throws, and {@skill Persuasion} and {@skill Deception} checks."
+					]
+				}
+			]
+		},
+		{
+			"name": "Assassin's Blade",
+			"source": "Tyms",
+			"page": 0,
+			"baseItem": "dagger|PHB",
+			"rarity": "uncommon",
+			"type": "M",
+			"weight": 0.5,
+			"value": 400,
+			"weaponCategory": "simple",
+			"weapon": true,
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"entries": [
+				"This well made dagger is lighter than normal and has intricate lines carved in it leading from a divot in the hilt to the blade and point. A thin-glass bead of poison slots into the divot and when squeezed brakes and the poison flows through the channels towards the blade and point, coating them in poison.",
+				"Using your object interaction you can break the poison bead to coat the blade for 1 hour. When the blade is coated with the poison, when you hit a creature they must succeed a {@dc 13} Constitution saving throw or take {@damage 2d6} poison damage and become {@condition poisoned} for 1 minute. On a successful save the creature takes half the damage and is not poisoned."
+			]
+		},
+		{
+			"name": "Doppler Shard",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "very rare",
+			"weight": 0.25,
+			"value": 10000,
+			"attachedSpells": [
+				"disguise self"
+			],
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"A crystallised remnant of a Doppler's true form, looks like amber.",
+				"Allows you to cast {@spell disguise self|phb} for free without verbal or somatic components once per day (resetting at dawn)."
+			]
+		},
+		{
+			"name": "+1 Brawler's Armbands",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"bonusWeapon": "+1",
+			"entries": [
+				"While you're wearing these armbands, your unarmed strikes and attacks with improvised weapons are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage, and you gain a +1 bonus to the attack and damage rolls of your unarmed strikes and attacks with improvised weapons."
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Puddle Walk",
+			"source": "Tyms",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small piece of cork"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"This spell grants the ability to move across water no deeper than three inches as if it were harmless solid ground.",
+				"If you target a creature submerged no deeper than three inches in water, the spell carries the target to the surface of the water at a rate of 60 feet per round."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					}
+				]
+			},
+			"uniqueId": "7e1356c4-c4cd-4757-b58b-5906f4b84135"
+		}
+	]
+}
