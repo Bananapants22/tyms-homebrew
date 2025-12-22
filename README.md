@@ -1,7 +1,7 @@
 # Tyms Homebrew
 
 ### How to load into 5etools
-To add to 5etools, go to "Manage Homebrew", click "Load from URL" and paste in the link you get when you click "Raw" on the main file here.
+To add to 5etools, go to "Manage Homebrew", click "Load from URL" and paste in the link you get when you click "Raw" on the main file ("Tym; Tyms.json") here.
 
 ## Future Plans
 - Add the flintlock pistol
