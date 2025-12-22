@@ -5,7 +5,7 @@
 				"json": "Tyms",
 				"abbreviation": "Tyms",
 				"full": "Tyms",
-				"version": "1.2",
+				"version": "1.3",
 				"authors": [
 					"Tym"
 				],
@@ -18,7 +18,7 @@
 		],
 		"status": "ready",
 		"dateAdded": 1766362680,
-		"dateLastModified": 1766410877
+		"dateLastModified": 1766436812
 	},
 	"item": [
 		{
@@ -104,7 +104,7 @@
 			"name": "Wand of Canned SoundBites",
 			"source": "Tyms",
 			"page": 0,
-			"rarity": "uncommon",
+			"rarity": "unknown (magic)",
 			"type": "WD",
 			"charges": 5,
 			"recharge": "dawn",
@@ -281,6 +281,124 @@
 			"entries": [
 				"While you're wearing these armbands, your unarmed strikes and attacks with improvised weapons are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage, and you gain a +1 bonus to the attack and damage rolls of your unarmed strikes and attacks with improvised weapons."
 			]
+		},
+		{
+			"name": "Ember Bells",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "unknown (magic)",
+			"attachedSpells": [
+				"toll the dead",
+				"for whom the bell tolls"
+			],
+			"reqAttune": "by Arabella",
+			"weight": 0.25,
+			"wondrous": true,
+			"charges": 4,
+			"recharge": "dawn",
+			"entries": [
+				"A set of bells, glowing slightly as if they were very hot, yet the heat is negligible.",
+				"Sheds dim light in a 5ft radius.",
+				"Holds 4 charges, while attuned you can do the following:",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "As an action you can expend 1 charge to cast {@spell toll the dead|xge}, the sound of the bell acts as a Verbal, and its movement as a Somatic component."
+						},
+						{
+							"type": "item",
+							"entries": [
+								"As an action you can expend 2 charges to cast {@spell for whom the bell tolls}, the sound of the bell acts as a Verbal, and its movement as a Somatic component.",
+								"By expending additional charges you can activate the following additional effects:",
+								{
+									"type": "list",
+									"items": [
+										{
+											"type": "item",
+											"entry": "By expending one additional charge, you can cast this spell as a bonus action."
+										},
+										{
+											"type": "item",
+											"entry": "By expending one additional charge, you have advantage on your next attack roll against the creature identified as closest to death."
+										},
+										{
+											"type": "item",
+											"entry": "By expending one additional charge, you can force the creature to make a Charisma saving throw against your spell save DC. Upon failure they become {@condition frightened} of you for 1 minute. They may attempt the saving throw again at the end of their turn, ending the condition on a success."
+										}
+									]
+								}
+							]
+						}
+					] 
+				},
+				"The bells regain {@dice 1d4} charges at dawn."
+			]
+		},
+		{
+			"name": "Hexdeck",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"attachedSpells": [
+				"prestidigitation",
+				"spray of cards"
+			],
+			"wondrous": true,
+			"reqAttune": "by a {@race Hexblood|vrgr}",
+			"charges": 4,
+			"recharge": "dawn",
+			"entries": [
+				"A deck of high-quality playing cards which shimmer slightly.",
+				{
+					"type": "entries",
+					"entries": [
+						"The deck has 4 charges. While holding it you can use the following features:",
+						{
+							"type": "entries",
+							"name": "Card Throw (1-2 charges)",
+							"entries": [
+								"As an action you can expend 1 charge to make a ranged spell attack using your Dexterity as the spellcasting ability. The throw has a range of 60 ft and deals {@damage 1d8} force damage on a hit.",
+								"You may spend an additional charge to perform this as a bonus action."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Card Spray (2-4 charges)",
+							"entries": [
+								"As an action you can spend 2 charges to cast {@spell spray of cards} as a 2nd level spell, using your Dexterity as the spellcasting ability.",
+								"You may expend additional charges to increase the level of the spell. The level increases by 1 for each additional charge spent."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sleeved Ace (1-2 charges)",
+							"entries": [
+								"As a bonus action you can expend 1 charge to attack a spectral ace from your sleeve to an object you are holding. The next attack you land with this object within 1 minute deals an additional {@damage 2d4} force damage.",
+								"If a minute passes without landing a hit, or if the object takes any damage the object explodes in a 5 ft radius. Any creature within the radius must succeed a {@dc 13} Dexterity saving throw or take {@damage 1d6} force damage. On a successful save, they take half as much damage.",
+								"You may expend an additional charge to make the card invisible."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Charging",
+					"entries": [
+						"If the last charge is expended the deck becomes inert, losing its shimmer and behaving like a mundane (but well made) deck of cards.",
+						"If the deck is not inert, it regains {@dice 1d4} charges at dawn."
+					]
+				},
+				"You have acess to the {@spell pretidigitation} cantrip as long as the deck is not inert.",
+				{
+					"type": "entries",
+					"name": "Recharging an Inert Deck",
+					"entries": [
+						"The deck remains inert until its attuned user wins a game of chance, at which point it regains 1 charge immediately and is no longer inert."
+					]
+				}
+			]
 		}
 	],
 	"spell": [
@@ -350,6 +468,56 @@
 				]
 			},
 			"uniqueId": "7e1356c4-c4cd-4757-b58b-5906f4b84135"
+		},
+		{
+			"name": "For Whom the Bell Tolls",
+			"source": "Tyms",
+			"page": 0,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You make the sound of a bell. Of all creatures within 120 feet who can hear the sound you learn which one is closest to death. (can be lowest HP, oldest age, worst illness, DMs discretion)."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"areaTags": [
+				"S"
+			]
 		}
 	]
 
