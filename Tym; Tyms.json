@@ -283,6 +283,28 @@
 			]
 		},
 		{
+			"name": "+2 Brawler's Armbands",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "rare",
+			"wondrous": true,
+			"bonusWeapon": "+2",
+			"entries": [
+				"While you're wearing these armbands, your unarmed strikes and attacks with improvised weapons are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage, and you gain a +2 bonus to the attack and damage rolls of your unarmed strikes and attacks with improvised weapons."
+			]
+		},
+		{
+			"name": "+3 Brawler's Armbands",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "very rare",
+			"wondrous": true,
+			"bonusWeapon": "+3",
+			"entries": [
+				"While you're wearing these armbands, your unarmed strikes and attacks with improvised weapons are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks and damage, and you gain a +3 bonus to the attack and damage rolls of your unarmed strikes and attacks with improvised weapons."
+			]
+		},
+		{
 			"name": "Ember Bells",
 			"source": "Tyms",
 			"page": 0,
@@ -518,6 +540,32 @@
 			"areaTags": [
 				"S"
 			]
+		}
+	],
+	"reward": [
+		{
+			"name": "Blessing of Kord",
+			"source": "Tyms",
+			"page": 0,
+			"type": "Blessing",
+			"entries": [
+				"This blessing allows you to add {@dice 1d4} to an attack roll, ability check or saving throw once."
+			]
+		}
+	],
+	"itemGroup": [
+		{
+			"name": "Brawler's Armbands",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "varies",
+			"wondrous": true,
+			"items": [
+				"+1 Brawler's Armbands|Tyms",
+				"+2 Brawler's Armbands|Tyms",
+				"+3 Brawler's Armbands|Tyms"
+			],
+			"entries": []
 		}
 	]
 
