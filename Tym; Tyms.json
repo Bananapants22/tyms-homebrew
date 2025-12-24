@@ -5,7 +5,7 @@
 				"json": "Tyms",
 				"abbreviation": "Tyms",
 				"full": "Tyms",
-				"version": "1.3",
+				"version": "1.0.4",
 				"authors": [
 					"Tym"
 				],
@@ -16,9 +16,10 @@
 				"colorNight": "de4e4e"
 			}
 		],
-		"status": "ready",
+		"status": "wip",
 		"dateAdded": 1766362680,
-		"dateLastModified": 1766436812
+		"dateLastModified": 1766599673,
+		"edition": "classic"
 	},
 	"item": [
 		{
@@ -421,6 +422,33 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Flintlock Pistol",
+			"source": "Tyms",
+			"page": 0,
+			"type": "R",
+			"rarity": "none",
+			"value": 30000,
+			"weaponCategory": "martial",
+			"property": [
+				"AP",
+				"SB",
+				"MF",
+				"LOAD",
+				"AF|DMG"
+			],
+			"range": "30/60",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "ball bearing|PHB",
+			"entries": [
+				"The smallest gunpowder weapon (thought) possible, due to cumbersome loading, it is usually used in rank fire or at the beginning of combat, and then discarded, favoured by seamen for their easy handling and high alpha-damage.",
+				"If already drawn, the pistol can be fired as a bonus action.",
+				"This weapon can be fired as part of a reaction, provided the reaction is to make an attack."
+			]
 		}
 	],
 	"spell": [
@@ -566,6 +594,68 @@
 				"+3 Brawler's Armbands|Tyms"
 			],
 			"entries": []
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "LOAD",
+			"source": "Tyms",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Loading",
+					"entries": [
+						"This weapon can be fired at most once before reloading.",
+						"As an action, you can load gunpower and a wad. From this upon firing the firearm will fire a 'blank'.",
+						"Once loaded with gunpowder, as an action you can load a {@item ball bearing|PHB}. (After this you can fire the firearm with a bonus action as normal)."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "SB",
+			"source": "Tyms",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Short Barrel",
+					"entries": [
+						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with this weapon."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "AP",
+			"source": "Tyms",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Armour Piercing",
+					"entries": [
+						"This weapon interacts differently than normal with armour:",
+						"If the roll to hit was above the target's base AC but below their AC with armour, the damage is still applied, but reduced by the difference between armoured and unarmoured AC."
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "MF",
+			"source": "Tyms",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Misfires",
+					"entries": [
+						"If an attack roll made with this weapon is a 'natural 2', it fails to fire and needs to be reloaded before it can fire again.",
+						"If an attack roll made with this weapon is a natural 1, it fails and deals {@damage 1d4} force damage to the wielder. It is then damaged and needs 10 minutes of repair with {@item tinker's tools|PHB}, or use of the {@spell mending} cantrip."
+					]
+				}
+			]
 		}
 	]
 
