@@ -87,7 +87,7 @@
 					"items": [
 						{
 							"type": "item",
-							"entry": "It has dimensions of 30x20x10cm.",
+							"entry": "It has dimensions of 30x20x10cm."
 						},
 						{
 							"type": "item",
@@ -675,4 +675,5 @@
 	]
 
 }
+
 
