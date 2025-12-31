@@ -5,7 +5,7 @@
 				"json": "Tyms",
 				"abbreviation": "Tyms",
 				"full": "Tyms",
-				"version": "1.0.5",
+				"version": "1.0.6",
 				"authors": [
 					"Tym"
 				],
@@ -18,7 +18,7 @@
 		],
 		"status": "wip",
 		"dateAdded": 1766362680,
-		"dateLastModified": 1766599673,
+		"dateLastModified": 1767188600,
 		"edition": "classic"
 	},
 	"item": [
@@ -81,10 +81,25 @@
 			"rarity": "uncommon",
 			"wondrous": true,
 			"entries": [
-				"This small rectangular box is slightly cold to the touch and always appears to have condensation on its exterior.",
-				"It has dimensions of 30x20x10cm.",
-				"Any object or creature fully within the volume for more than 1 minute has its temperature magically set to exactly 5 degrees Celsius.",
-				"Upon partially or fully leaving the volume of the box the objects' or creatures' temperature returns to its original temperature."
+				"This small rectangular box is slightly cold to the touch and always appears to have condensation on its exterior that cannot be wiped or dried.",
+				{
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "It has dimensions of 30x20x10cm.",
+						},
+						{
+							"type": "item",
+							"entry": "The air inside this box is always exactly 5 degrees Celsius."
+						},
+						{
+							"type": "item",
+							"entry": "Even when open the cold air does not seem to flow out of it."
+						}
+					]
+				},
+				"Beware, legends say that misuse of the box may call forth vengeance of the fundamental laws of nature themselves."
 			]
 		},
 		{
@@ -660,3 +675,4 @@
 	]
 
 }
+
