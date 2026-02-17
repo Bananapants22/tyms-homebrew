@@ -4,8 +4,8 @@
 			{
 				"json": "Tyms",
 				"abbreviation": "Tyms",
-				"full": "Tyms",
-				"version": "1.0.6",
+				"full": "Tym Campaign",
+				"version": "1.1.0",
 				"authors": [
 					"Tym"
 				],
@@ -18,7 +18,7 @@
 		],
 		"status": "wip",
 		"dateAdded": 1766362680,
-		"dateLastModified": 1767188600,
+		"dateLastModified": 1771372431,
 		"edition": "classic"
 	},
 	"item": [
@@ -27,7 +27,7 @@
 			"source": "Tyms",
 			"page": 0,
 			"type": "M",
-			"rarity": "uncommon",
+			"rarity": "none",
 			"weight": 5,
 			"weaponCategory": "martial",
 			"property": [
@@ -87,7 +87,7 @@
 					"items": [
 						{
 							"type": "item",
-							"entry": "It has dimensions of 30x20x10cm.",
+							"entry": "It has dimensions of 30x20x10cm."
 						},
 						{
 							"type": "item",
@@ -464,6 +464,39 @@
 				"If already drawn, the pistol can be fired as a bonus action.",
 				"This weapon can be fired as part of a reaction, provided the reaction is to make an attack."
 			]
+		},
+		{
+			"name": "Gas Mask",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"entries": [
+				"A black leather and metal mask covering the mouth and nose, with sacks that expand and contract along with the users breath.",
+				"When in use it doubles the amount of time the user can hold breath, allows speech and by extension verbal spell components while holding breath. Does not work when submerged or in a vacuum."
+			]
+		},
+		{
+			"name": "Miner's Hardhat",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"bonusAc": "+1",
+			"reqAttune": true,
+			"entries": [
+				"While you're wearing these armbands,  you gain the following:",
+				{
+					"type": "entries",
+					"entries": [
+						"You gain a +1 bonus to AC.",
+						"Critical hits from attacks dealing non-magical bludgeoning damage count as normal hits to you.",
+						"Once per long rest you may activate the Hardhat making you aware of the direction of the nearest uncut gem or unrefined metalilc ore for 1 hour."
+					]
+				}
+
+			]
 		}
 	],
 	"spell": [
@@ -675,4 +708,5 @@
 	]
 
 }
+
 
