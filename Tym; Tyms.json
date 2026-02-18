@@ -5,7 +5,7 @@
 				"json": "Tyms",
 				"abbreviation": "Tyms",
 				"full": "Tym Campaign",
-				"version": "1.1.0",
+				"version": "1.1.1",
 				"authors": [
 					"Tym"
 				],
@@ -18,7 +18,7 @@
 		],
 		"status": "wip",
 		"dateAdded": 1766362680,
-		"dateLastModified": 1771372431,
+		"dateLastModified": 1771375125,
 		"edition": "classic"
 	},
 	"item": [
@@ -486,16 +486,140 @@
 			"bonusAc": "+1",
 			"reqAttune": true,
 			"entries": [
-				"While you're wearing these armbands,  you gain the following:",
+				"While you're wearing this hat,  you gain the following:",
 				{
-					"type": "entries",
-					"entries": [
-						"You gain a +1 bonus to AC.",
-						"Critical hits from attacks dealing non-magical bludgeoning damage count as normal hits to you.",
-						"Once per long rest you may activate the Hardhat making you aware of the direction of the nearest uncut gem or unrefined metalilc ore for 1 hour."
+					"type": "list",
+					"items": [
+						{
+							"type": "item",
+							"entry": "You gain a +1 bonus to AC."
+						},
+						{
+							"type": "item",
+							"entry": "Critical hits from attacks dealing non-magical bludgeoning damage count as normal hits to you."
+						},
+						{
+							"type": "item",
+							"entry": "Once per long rest you may activate the Hardhat making you aware of the direction of the nearest uncut gem or unrefined metalilc ore for 1 hour."
+						}					
 					]
 				}
 
+			]
+		},
+		{
+			"name": "Kord's Hammer",
+			"source": "Tyms",
+			"page": 0,
+			"rarity": "rare",
+			"reqAttune": "by a {@class Cleric} of the Stormlord",
+			"weight": 5,
+			"bonusWeapon": "+1",
+			"type": "M",
+			"charges": 5,
+			"attachedSpells": [
+				"lightning bolt",
+				"thunderous smite"
+			],
+			"dmg1": "2d4",
+			"dmg2": "1d10",
+			"dmgType": "B",
+			"property": [
+				"T",
+				"V"
+			],
+			"focus": true,
+			"range": "15/30",
+			"entries": [
+				"While attuned to this item, it has the following properties. This item has 5 charges:",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entry",
+							"entries": "This item acts as a spellcasting focus for the attuned."
+						},
+						{
+							"type": "entry",
+							"entries": "This item acts as an {@item immovable rod} that can only be toggled by the attuned."
+						},
+						{
+							"type": "entry",
+							"entries": [
+								"When casting a spell or cantrip dealing Thunder or Lightning damage while holding the Hammer you have access to the following metamagic options, using charges as if they were sorcery points:",
+								{
+									"type": "list",
+									"items": [
+										{
+											"type": "item",
+											"entry": "{@metamagic Empowered Spell}"
+										},
+										{
+											"type": "item",
+											"entry": "{@metamagic Heightened Spell}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Lightning Rod (1 charge)",
+							"entries": [
+								"As a reaction to taking lighting damage, direct the incoming damage into the hammer.",
+								"If you are given a saving throw against the damage you may use your Wisdom instead of the listed ability. If you succeed on the save you take no damage,  and if you fail on the save you take half damage.",
+								"The Hammer regains 1 charge for every 5 absorbed raw lighting damage, before applying resistances. If the hammer absorbs enough damage to go over 5 charges, something happens."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Far Throw (varies)",
+							"entries": [
+								"As part of a ranged attack made by throwing the hammer you can extend the attack's range to 60/120 ft for 1 charge, or 200/300 ft for 2 charges. Negotiate with the DM for more."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "If Ye Be Worthy (1 charge)",
+							"entries": [
+								"As a bonus action remotely toggle the immovability on or off."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Recall (1 charge)",
+							"entries": [
+								"As a bonus action command the hammer to return to your hand, as long as it is on the same plane as you.",
+								"The hammer flies at 100 ft/s (600ft/turn).",
+								"You may expend an additional charge to command a specific path.",
+								"Objects Medium or smaller in the way take {@damage 2d4} magical bludgeoning damage and are pushed away, larger objects are avoided. Creatures in the way must make a Dexterity save with your spellcasting DC or take {@damage 2d4} magical bludgeoning damage and fall {@condition prone}."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Thunderous Smite (2 charges)",
+							"entries": [
+								"As a bonus action cast {@spell thunderous smite}."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Put the Hammer Down (3 charges)",
+							"entries": [
+								"As an action, you gain the effects of the {@spell jump} spell.",
+								"When you land, you strike the ground with the hammer. Any creature or object within 10 feet (except you) takes {@damage 6d4} thunder or lighting damage (users choice) Any creature between 10 and 20 feet away takes half damage. Affected creatures can make a Dexterity save against your spellcasting DC to half the damage",
+								"You may expend an additional charge to double both the short and long range."
+							]
+						},
+						{
+							"type": "entry",
+							"name": "Lightning Bolt (4 charges)",
+							"entries": [
+								"As an action cast {@spell lightning bolt}."
+							]
+						}
+					]
+				}
 			]
 		}
 	],
